@@ -15,7 +15,26 @@ body {
     border: 1px solid rgba(220, 60, 255, 0.3);
     padding: 30px;
     max-width: 600px;
-    margin: 20px auto; /* This will center the container */
+    margin: 20px auto;
+}
+
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #b08968;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
 }
 
 h1, label {
@@ -24,24 +43,24 @@ h1, label {
 }
 
 form {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Ensure padding is consistent */
+    margin: 0;
+    padding: 0;
 }
 
 input, textarea {
     font-family: 'Vazirmatn', sans-serif;
     font-size: 1rem;
-    width: calc(100% - 5px); /* Ensure it doesn't overflow (2.1px border on each side and padding) */
+    width: calc(100% - 5px);
     padding: 10px;
     margin: 10px 0;
     background: rgba(0, 0, 0, 0);
     border: 2.1px solid #b08968;
     border-radius: 5px;
-    box-sizing: border-box; /* Makes sure padding and borders are included in width */
+    box-sizing: border-box;
 }
 
 textarea {
-    direction: rtl; /* Keep text area right-to-left if needed */
+    direction: rtl;
 }
 
 button {
