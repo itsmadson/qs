@@ -28,7 +28,7 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 5px solid #b08968;
+    border: 10px solid #b08968;
     margin: 0 10px;
     transition: transform 0.3s ease;
 }
